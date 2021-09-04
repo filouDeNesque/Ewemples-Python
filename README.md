@@ -1,4 +1,4 @@
-# Exemple en python
+# Exemples en python
 
 ## Présentation
 Pour agrandir mes compétences je tente de comprendre les différences entre différents langages.
