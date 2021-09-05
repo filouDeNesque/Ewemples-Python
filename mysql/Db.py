@@ -23,15 +23,13 @@ class Db:
             for user in userlist:
                 newuser = User(user[1],user[2],user[3],user[4])
                 userArray.append(newuser)
-                print ('nom:{}'.format(user[1]))
-                print ('login:{}'.format(user[2]))
-                print ('password:{}'.format(user[3]))
-                print ('surname:{}'.format(user[4]))
 
+            print('Select all users')
             for users in userArray:
                 print('--------------')
-                print('User array:{}'.format(users.name) )
-
+                print('User name:{}, {}'.format(users.name, users.surname))
+            
+            return userArray
 
 
         except MC.error as err:
