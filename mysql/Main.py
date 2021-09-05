@@ -1,5 +1,6 @@
 from Db import Db
 
 db = Db()
-listUsers = db.listallusers()
-print(listUsers[0].name)
+listUsers = db.getAllusers()
+db.addUser()
+#print(getAllusers[0].name)
