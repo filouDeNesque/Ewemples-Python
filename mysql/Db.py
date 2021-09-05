@@ -43,12 +43,12 @@ class Db:
 
 #Ajout d'un utilisateur
 
-    def addUser(self):
+    def addUser(self, name, surname, password, login):
         try:
             conn = MC.connect(host='localhost', database='cat_db', user='root', password='root')
             cursor = conn.cursor()
             req = 'insert into user(id, name , surname, password, login ) values(%s, %s, %s, %s, %s)'
-            infos = (cursor.lastrowid, 'Lacoste','together', 'Belzebut', 'herisson59')
+            infos = (cursor.lastrowid, name, surname, password, login )
 
             cursor.execute(req, infos)
             conn.commit()
